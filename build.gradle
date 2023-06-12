@@ -14,15 +14,11 @@ configurations {
 	}
 }
 
-allprojects  {
-	apply plugin: 'maven'
-	apply plugin: "io.spring.dependency-management"
-
-	group = 'com.wnp'
-	version = '6.5.0-SNAPSHOT'
-}
 repositories {
 	mavenCentral()
+	maven{
+		url "https://plugins.gradle.org/m2/"
+	}
 }
 
 dependencies {
